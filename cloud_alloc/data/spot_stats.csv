@@ -1,0 +1,26 @@
+# SYNTHETIC, calibrated on public AWS-style price/interruption bands; replace with real data later.
+type,region,spot_discount,interruption_rate,price_volatility
+t3.medium,ap-south-1,0.68,0.15,0.09
+t3.medium,eu-west-1,0.70,0.10,0.08
+t3.medium,us-east-1,0.72,0.10,0.07
+m5.large,ap-south-1,0.65,0.10,0.08
+m5.large,eu-west-1,0.67,0.10,0.07
+m5.large,us-east-1,0.70,0.05,0.06
+m5.xlarge,ap-south-1,0.66,0.15,0.10
+m5.xlarge,eu-west-1,0.68,0.10,0.08
+m5.xlarge,us-east-1,0.71,0.05,0.07
+m5.2xlarge,ap-south-1,0.64,0.20,0.12
+m5.2xlarge,eu-west-1,0.66,0.15,0.10
+m5.2xlarge,us-east-1,0.69,0.10,0.09
+c5.xlarge,ap-south-1,0.70,0.15,0.11
+c5.xlarge,eu-west-1,0.72,0.10,0.09
+c5.xlarge,us-east-1,0.75,0.10,0.08
+c5.2xlarge,ap-south-1,0.69,0.20,0.13
+c5.2xlarge,eu-west-1,0.71,0.15,0.11
+c5.2xlarge,us-east-1,0.74,0.10,0.09
+r5.large,ap-south-1,0.62,0.10,0.07
+r5.large,eu-west-1,0.64,0.10,0.07
+r5.large,us-east-1,0.66,0.05,0.06
+r5.xlarge,ap-south-1,0.63,0.15,0.09
+r5.xlarge,eu-west-1,0.65,0.10,0.08
+r5.xlarge,us-east-1,0.68,0.05,0.07

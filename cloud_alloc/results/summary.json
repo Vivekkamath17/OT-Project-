@@ -1,0 +1,135 @@
+{
+  "summary_stats": {
+    "seeds": [
+      42
+    ],
+    "nsga2_hv_mean": 0.15276740967501093,
+    "nsga2_hv_std": 0.0,
+    "b3_hv_mean": 0.16724738371206144,
+    "b3_hv_std": 0.0,
+    "nsga2_runtime_mean": 0.8090469837188721,
+    "b3_runtime_mean": 0.2479536533355713,
+    "nsga2_feasibility_mean": 1.0,
+    "b3_feasibility_mean": 0.13583333333333333,
+    "nsga2_solutions_count_mean": 22.0,
+    "dominate_b1_mean": 0.0,
+    "dominate_b2_mean": 7.0
+  },
+  "b1_all_ondemand": {
+    "cost": 3761.4208,
+    "unavail": 1.1102230246251565e-16,
+    "makespan": 720.0
+  },
+  "b2_greedy": {
+    "cost": 2460.3027199999997,
+    "unavail": 0.0,
+    "makespan": 720.0250008680857
+  },
+  "representative_plans": [
+    {
+      "Plan": "Cost-Saver",
+      "Cost ($/mo)": 2306.36,
+      "Cost Saving vs B1 (%)": 38.7,
+      "Web Availability (%)": 100.0,
+      "Web Unavailability": 0.0,
+      "Batch Makespan (hrs)": 720.0,
+      "Data Loss Risk (GB/mo)": 0.95,
+      "Workloads": {
+        "web": {
+          "instances_count": 18,
+          "vcpu": 50,
+          "ram_gb": 248.0,
+          "spot_fraction_pct": 64.0,
+          "regions": "ap-south-1/eu-west-1/us-east-1",
+          "instances_detail": "9x m5.large (od, ap-south-1), 2x m5.large (spot, ap-south-1), 2x m5.xlarge (spot, ap-south-1), 2x m5.xlarge (spot, eu-west-1), 3x r5.xlarge (spot, us-east-1)"
+        },
+        "db": {
+          "instances_count": 5,
+          "vcpu": 16,
+          "ram_gb": 80.0,
+          "spot_fraction_pct": 0.0,
+          "regions": "us-east-1",
+          "instances_detail": "1x c5.2xlarge (od, us-east-1), 4x r5.large (od, us-east-1)"
+        },
+        "batch": {
+          "instances_count": 12,
+          "vcpu": 48,
+          "ram_gb": 120.0,
+          "spot_fraction_pct": 100.0,
+          "regions": "us-east-1",
+          "instances_detail": "11x c5.xlarge (spot, us-east-1), 1x r5.xlarge (spot, us-east-1)"
+        }
+      }
+    },
+    {
+      "Plan": "Balanced",
+      "Cost ($/mo)": 2629.99,
+      "Cost Saving vs B1 (%)": 30.1,
+      "Web Availability (%)": 100.0,
+      "Web Unavailability": 0.0,
+      "Batch Makespan (hrs)": 720.0,
+      "Data Loss Risk (GB/mo)": 0.62,
+      "Workloads": {
+        "web": {
+          "instances_count": 20,
+          "vcpu": 46,
+          "ram_gb": 184.0,
+          "spot_fraction_pct": 39.1,
+          "regions": "ap-south-1/eu-west-1/us-east-1",
+          "instances_detail": "14x m5.large (od, ap-south-1), 3x m5.large (spot, ap-south-1), 2x m5.xlarge (spot, eu-west-1), 1x m5.xlarge (spot, us-east-1)"
+        },
+        "db": {
+          "instances_count": 5,
+          "vcpu": 16,
+          "ram_gb": 80.0,
+          "spot_fraction_pct": 0.0,
+          "regions": "us-east-1",
+          "instances_detail": "1x c5.2xlarge (od, us-east-1), 4x r5.large (od, us-east-1)"
+        },
+        "batch": {
+          "instances_count": 17,
+          "vcpu": 48,
+          "ram_gb": 264.0,
+          "spot_fraction_pct": 100.0,
+          "regions": "us-east-1",
+          "instances_detail": "5x c5.xlarge (spot, us-east-1), 10x r5.large (spot, us-east-1), 2x r5.xlarge (spot, us-east-1)"
+        }
+      }
+    },
+    {
+      "Plan": "Reliability-First",
+      "Cost ($/mo)": 2456.65,
+      "Cost Saving vs B1 (%)": 34.7,
+      "Web Availability (%)": 100.0,
+      "Web Unavailability": 0.0,
+      "Batch Makespan (hrs)": 720.0,
+      "Data Loss Risk (GB/mo)": 0.73,
+      "Workloads": {
+        "web": {
+          "instances_count": 14,
+          "vcpu": 42,
+          "ram_gb": 168.0,
+          "spot_fraction_pct": 28.6,
+          "regions": "ap-south-1/eu-west-1/us-east-1",
+          "instances_detail": "5x m5.large (od, ap-south-1), 2x m5.large (spot, ap-south-1), 1x m5.xlarge (od, ap-south-1), 4x m5.xlarge (od, us-east-1), 1x m5.xlarge (spot, eu-west-1), 1x m5.xlarge (spot, us-east-1)"
+        },
+        "db": {
+          "instances_count": 5,
+          "vcpu": 16,
+          "ram_gb": 80.0,
+          "spot_fraction_pct": 0.0,
+          "regions": "eu-west-1/us-east-1",
+          "instances_detail": "1x c5.2xlarge (od, us-east-1), 4x r5.large (od, eu-west-1)"
+        },
+        "batch": {
+          "instances_count": 12,
+          "vcpu": 48,
+          "ram_gb": 96.0,
+          "spot_fraction_pct": 100.0,
+          "regions": "us-east-1",
+          "instances_detail": "12x c5.xlarge (spot, us-east-1)"
+        }
+      }
+    }
+  ]
+}

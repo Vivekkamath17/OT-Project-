@@ -1,0 +1,61 @@
+{
+  "_comment": "SYNTHETIC, calibrated on public AWS-style price/interruption bands; replace with real data later.",
+  "workloads": {
+    "web": {
+      "name": "Customer Facing Web Tier",
+      "cpu_req": 32,
+      "ram_req": 64,
+      "storage_req": 200,
+      "allowed_regions": ["ap-south-1", "eu-west-1", "us-east-1"],
+      "peak_load": 28,
+      "headroom": 0.30,
+      "min_instances": 4,
+      "spot_allowed": true,
+      "batch_total_work": 0,
+      "latency_target_ms": 120.0,
+      "base_latency_by_region": {
+        "ap-south-1": 65.0,
+        "eu-west-1": 45.0,
+        "us-east-1": 35.0
+      },
+      "data_transfer_gb": 1500
+    },
+    "db": {
+      "name": "Mission-Critical Database",
+      "cpu_req": 16,
+      "ram_req": 64,
+      "storage_req": 1000,
+      "allowed_regions": ["eu-west-1", "us-east-1"],
+      "peak_load": 14,
+      "headroom": 0.25,
+      "min_instances": 2,
+      "spot_allowed": false,
+      "batch_total_work": 0,
+      "latency_target_ms": 80.0,
+      "base_latency_by_region": {
+        "eu-west-1": 30.0,
+        "us-east-1": 25.0
+      },
+      "data_transfer_gb": 800
+    },
+    "batch": {
+      "name": "Backend Data Processing",
+      "cpu_req": 48,
+      "ram_req": 96,
+      "storage_req": 500,
+      "allowed_regions": ["ap-south-1", "eu-west-1", "us-east-1"],
+      "peak_load": 40,
+      "headroom": 0.15,
+      "min_instances": 2,
+      "spot_allowed": true,
+      "batch_total_work": 34560,
+      "latency_target_ms": 720.0,
+      "base_latency_by_region": {
+        "ap-south-1": 50.0,
+        "eu-west-1": 40.0,
+        "us-east-1": 30.0
+      },
+      "data_transfer_gb": 2000
+    }
+  }
+}

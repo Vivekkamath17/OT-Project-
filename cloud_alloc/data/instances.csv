@@ -1,0 +1,10 @@
+# SYNTHETIC, calibrated on public AWS-style price/interruption bands; replace with real data later.
+type,vcpu,ram_gb,ondemand_price_hr
+t3.medium,2,4,0.0416
+m5.large,2,8,0.0960
+m5.xlarge,4,16,0.1920
+m5.2xlarge,8,32,0.3840
+c5.xlarge,4,8,0.1700
+c5.2xlarge,8,16,0.3400
+r5.large,2,16,0.1260
+r5.xlarge,4,32,0.2520
